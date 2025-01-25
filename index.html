@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chi vuol essere un rapper</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Images/ChiVuolEssereUnRapper.png" type="image/icon type">
+
+    </head>
+    <body>
+
+        <video onloadstart="this.playbackRate = 0.8;" autoplay loop muted><source src="Video/NewBG.mp4" type="video/mp4"></video>
+
+        <div class="app">
+
+
+
+
+
+            <div class="quiz">
+                <h1 id="textIntro">BENVENUTO A CHI VUOL ESSERE RAPPER!</h1>
+                <h1 id="textIntro"> RISPONDI CORRETTAMENTE A QUESTO QUIZ PER UNO SPOILER DELLA NUOVA CANZONE DI SCHIAVO!</h1>  
+
+                <img src="Images/ChiVuolEssereUnRapper.png" width="500" height="500" id="imageLogo"/>
+ 
+                <form action="https://distrokid.com/hyperfollow/schiavo2/cdir">
+                    <input name ="form" type="image" src="Images/Cover.jpg" width="500" height="500" id="coverimage">
+                    
+                </form>
+                <div class="audioCenter" id="audio">
+                    <audio controls src="Spoiler/untitled.wav" type="audio/mpeg"></audio>
+                </div>
+
+                <h2 id="question">Test</h2>
+                <div id="answer-buttons">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>               
+    
+                </div>
+                <button id="next-btn">Next</button>
+            </div>
+
+        </div>
+        <div class="fine">    
+            <h1>Sito creato da Simone Antonio Schiavo</h1>
+        </div>
+
+           
+        <script src="script.js">
+        
+        </script>
+        <style>
+
+            img{
+                display: block;
+                margin: 0 auto 0 auto;
+                position: relative;
+                
+            }
+
+            input {
+                margin: 0 auto 0 auto;
+                display: none;
+                box-shadow: rgba(0, 0, 0, 0.25) 50px 100px 100px, rgba(0, 0, 0, 0.795) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                align-items: center;
+            }
+            .audioCenter{margin: 50px auto; width: 300px; scale: 2; display: none; }
+            
+        </style>
+    </body>
+    
+</html>
