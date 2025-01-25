@@ -1,6 +1,6 @@
 const questions = [
     {
-    question : "1) DI QUALE GRUPPO FANNO PARTE GUE' PEQUENO, JAKE LA FURIA E DON JOE?",
+    question : "1) DI QUALE GRUPPO FANNO PARTE GUÈ PEQUENO, JAKE LA FURIA E DON JOE?",
     answers: [
         { text: "ASSALTI FRONTALI", correct: false},
         { text: "CLUB DOGO", correct: true},
@@ -145,6 +145,9 @@ function showScore() {
         questionElement.innerHTML = "HAI RISPOSTO CORRETTAMENTE A " + score + " DOMANDE SU 5! HAI PERSO, RIPROVA PER AVERE LO SPOILER DEL BRANO DI SCHIAVO!"
         nextButton.innerHTML = "RIPROVA";
         nextButton.style.display = "block";
+        introText.style.display = "none"
+        introText2.style.display = "none"
+        presaveButton.style.display = "block"
     }
 
 }
