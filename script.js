@@ -49,10 +49,10 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const presaveButton = document.getElementById("coverimage");
-const introText = document.getElementById("textIntro")
-const introText2 = document.getElementById("textIntro2")
-const logoImage = document.getElementById("imageLogo")
-const musicButton = document.getElementById("playMusicButton")
+const introText2 = document.getElementById("textIntro2");
+const logoImage = document.getElementById("imageLogo");
+const musicButton = document.getElementById("playMusicButton");
+const textCover = document.getElementById("textCover");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -83,6 +83,7 @@ function startQuiz() {
     score = 0;
     nextButton.innerHTML = "PROSSIMA DOMANDA";
     showQuestion();
+
 }
 
 
@@ -113,6 +114,7 @@ function resetState() {
 }
 
 function selectAnswer(e){
+
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
@@ -138,22 +140,23 @@ function showScore() {
     if(score == "5") {
         questionElement.innerHTML = "HAI RISPOSTO CORRETTAMENTE A " + score + " DOMANDE SU 5! HAI VINTO! ECCO LO SPOILER DEL NUOVO BRANO DI SCHIAVO!"
         presaveButton.style.display = "block"
-        introText.style.display = "none"
         introText2.style.display = "none"
         musicButton.style.display = "block"
+        textCover.style.display = "block"
     }else{
         questionElement.innerHTML = "HAI RISPOSTO CORRETTAMENTE A " + score + " DOMANDE SU 5! HAI PERSO, RIPROVA PER AVERE LO SPOILER DEL BRANO DI SCHIAVO!"
         nextButton.innerHTML = "RIPROVA";
         nextButton.style.display = "block";
-        introText.style.display = "none"
         introText2.style.display = "none"
         presaveButton.style.display = "block"
+        textCover.style.display = "block"
     }
 
 }
 
 function handleNextButton(){
     currentQuestionIndex++
+    introText2.style.display = "none"
     if(currentQuestionIndex < questions.length) {
         showQuestion();
     }else{

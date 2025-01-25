@@ -35,10 +35,11 @@ video {
     min-height: 0%;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translate(0, -60%);
     padding: 50px;
 }
+
 
 .fine{
     background-color: #525252;
@@ -86,20 +87,18 @@ video {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 0 0 5px #000000;
 }
-.cover{
+.quiz h3{
     color: #ffff;
     font-size: 30px;
     text-align: center;
-    background-color: #121212;
+    background-color: #5f2a6b00;
+    border-radius: 2px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 5px #000000;
+    padding: 20px;
+    display: none;
 }
-.cover h1{
-    color: #ffff;
-    font-size: 30px;
-    text-align: center;
-    background-color: #121212;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 .btn{
     color: #ffff;
     font-size: 60px;
