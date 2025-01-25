@@ -113,7 +113,7 @@ video {
     position: relative;
     transition: all 280ms ease-in-out;
     content: "";
-    border-color: rgb(59, 12, 68);
+    border: none;
     box-shadow: 0 0 40px 40px #70034c inset, 0 0 0 0 #70034c;
     transition: all 150ms ease-in-out;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -135,6 +135,7 @@ video {
     position: relative;
     transition: all 280ms ease-in-out;
     content: "";
+    border: none;
     box-shadow: 0 0 40px 40px #70034c inset, 0 0 0 0 #70034c;
     transition: all 150ms ease-in-out;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
