@@ -30,7 +30,7 @@ const questions = [
         question : "4) CHI ERA DONDA?",
         answers: [
             { text: "LA MOGLIE DI DR. DRE", correct: false},
-            { text: "LA SORELLA DI TREVIS SCOTT", correct: false},
+            { text: "LA SORELLA DI DRAKE", correct: false},
             { text: "LA MADRE DI KANYE WEST", correct: true},
             { text: "LA MADRE DI JAY-Z", correct: false},
         ]
@@ -49,14 +49,33 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const presaveButton = document.getElementById("coverimage");
-const audioCenter = document.getElementById("audio");
 const introText = document.getElementById("textIntro")
+const introText2 = document.getElementById("textIntro2")
 const logoImage = document.getElementById("imageLogo")
-
+const musicButton = document.getElementById("playMusicButton")
 
 let currentQuestionIndex = 0;
 let score = 0;
 
+
+var aud = document.getElementById("spoilerSong");
+
+var isPlaying = false;
+aud.pause();
+aud.volume = 0.5;
+
+
+function playPause() {
+
+  if (isPlaying) {
+    aud.pause();
+    playMusicButton.textContent = "▶";
+  } else {
+    aud.play();
+    playMusicButton.textContent  = "❚❚";
+  }
+  isPlaying = !isPlaying;
+}
 
 
 function startQuiz() {
@@ -119,8 +138,9 @@ function showScore() {
     if(score == "5") {
         questionElement.innerHTML = "HAI RISPOSTO CORRETTAMENTE A " + score + " DOMANDE SU 5! HAI VINTO! ECCO LO SPOILER DEL NUOVO BRANO DI SCHIAVO!"
         presaveButton.style.display = "block"
-        audioCenter.style.display = "block"
         introText.style.display = "none"
+        introText2.style.display = "none"
+        musicButton.style.display = "block"
     }else{
         questionElement.innerHTML = "HAI RISPOSTO CORRETTAMENTE A " + score + " DOMANDE SU 5! HAI PERSO, RIPROVA PER AVERE LO SPOILER DEL BRANO DI SCHIAVO!"
         nextButton.innerHTML = "RIPROVA";

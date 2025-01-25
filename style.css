@@ -121,6 +121,39 @@ video {
 
       
 }
+
+.playMusicButton{
+    color: #ffff;
+    font-size: 60px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    height: 100%;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    backface-visibility: hidden;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    content: "";
+    border-color: rgba(252, 252, 252, 0);
+    box-shadow: 0 0 40px 40px #70034c inset, 0 0 0 0 #70034c;
+    transition: all 150ms ease-in-out;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
+
+      
+}
+
+.playMusicButton:hover:not([disabled]){
+    background: #70034c;
+    color: #ffffff;
+    box-shadow: 0 0 10px 0 #70034c inset, 0 0 10px 4px #70034c;
+}
+
+
+
+
 .btn:hover:not([disabled]){
     background: #70034c;
     color: #ffffff;

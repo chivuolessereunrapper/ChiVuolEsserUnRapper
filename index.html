@@ -4,6 +4,8 @@
         <title>Chi vuol essere un rapper</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="Images/ChiVuolEssereUnRapper.png" type="image/icon type">
+        <audio src="Spoiler/untitled.wav" loop autoplay id="spoilerSong" ></audio>
+        <meta charset="utf-8">
 
     </head>
     <body>
@@ -18,7 +20,7 @@
 
             <div class="quiz">
                 <h1 id="textIntro">BENVENUTO A CHI VUOL ESSERE RAPPER!</h1>
-                <h1 id="textIntro"> RISPONDI CORRETTAMENTE A QUESTO QUIZ PER UNO SPOILER DELLA NUOVA CANZONE DI SCHIAVO!</h1>  
+                <h1 id="textIntro2"> RISPONDI CORRETTAMENTE A QUESTO QUIZ PER UNO SPOILER DELLA NUOVA CANZONE DI SCHIAVO!</h1>  
 
                 <img src="Images/ChiVuolEssereUnRapper.png" width="500" height="500" id="imageLogo"/>
  
@@ -26,9 +28,9 @@
                     <input name ="form" type="image" src="Images/Cover.jpg" width="500" height="500" id="coverimage">
                     
                 </form>
-                <div class="audioCenter" id="audio">
-                    <audio controls src="Spoiler/untitled.wav" type="audio/mpeg"></audio>
-                </div>
+
+                <button class="playMusicButton" id="playMusicButton" onClick="playPause()">▶</button>
+
 
                 <h2 id="question">Test</h2>
                 <div id="answer-buttons">
