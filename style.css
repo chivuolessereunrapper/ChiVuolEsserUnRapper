@@ -11,6 +11,7 @@ body {
     height: 100%;
     align-items: center;
     justify-content: center;
+
 }
 
 video {
@@ -38,6 +39,7 @@ video {
     top: 60%;
     transform: translate(0, -60%);
     padding: 50px;
+    
 }
 
 
@@ -99,8 +101,12 @@ video {
     display: none;
 }
 
+
+
 .btn{
     color: #ffff;
+    text-decoration:dotted;
+    background: #b86f9f;
     font-size: 60px;
     width: 100%;
     padding: 10px;
@@ -160,27 +166,77 @@ video {
 .btn:disabled {
     cursor: no-drop
 }
+
+  
 #next-btn{
-    background: #b9b854;
     color: #ffff;
-    font-weight: 500;
+    text-decoration:dotted;
+    background: #e4be15;
+    font-size: 60px;
     width: 50%;
-    border: 0;
     padding: 10px;
+    margin: 10px 0;
+    height: 100%;
+    text-align: center;
     margin: 20px auto 0;
     border-radius: 4px;
     cursor: pointer;
+    backface-visibility: hidden;
+    position: relative;
+    transition: all 280ms ease-in-out;
     display: none;
-    transition: all 0.3s;
-    font-size: 40px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    content: "";
+    border: none;
+    box-shadow: 0 0 40px 40px #ffdb3c inset, 0 0 0 0 #ffdb3c;
+    transition: all 150ms ease-in-out;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+      
 }
-
-  
-
 
 #next-btn:hover{
-    background: #4e4d1d;
-    color: #ffff;
+    background: #ffdb3c;
+    box-shadow: 0 0 10px 0 #ffdb3c inset, 0 0 10px 4px #ffdb3c;
 }
+
+.instagram-link {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .instagram-link img {
+    margin-right: 0.7rem;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
+  }
+  
+  .instagram-link a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(120, 66, 201, 0.4);
+    border-radius: 1rem;
+    padding: 0.8rem;
+    position: relative;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    overflow: hidden;
+    font-size: 35px;
+  }
+  
+  
+  .instagram-link a:hover {
+    transform: scale(1.5) rotate(-10deg);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  
+  .instagram-link a:hover::after {
+    transform: scale(1.5) rotate(180deg);
+  }
+  
+  

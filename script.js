@@ -81,7 +81,7 @@ function playPause() {
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
-    nextButton.innerHTML = "PROSSIMA DOMANDA";
+    nextButton.innerHTML = "CONTINUA";
     showQuestion();
 
 }
@@ -138,7 +138,7 @@ function selectAnswer(e){
 function showScore() {
     resetState();
     if(score == "5") {
-        questionElement.innerHTML = "HAI RISPOSTO CORRETTAMENTE A " + score + " DOMANDE SU 5! HAI VINTO! ECCO LO SPOILER DEL NUOVO BRANO DI SCHIAVO!"
+        questionElement.innerHTML = "HAI VINTO! ECCO LO SPOILER DEL NUOVO BRANO DI SCHIAVO!"
         presaveButton.style.display = "block"
         introText2.style.display = "none"
         musicButton.style.display = "block"
