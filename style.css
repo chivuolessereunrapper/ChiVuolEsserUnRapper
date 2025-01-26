@@ -179,28 +179,6 @@ video {
 
   
 
-#presave-btn {
-    background: #121212;
-    color: #ffff;
-    font-weight: 500;
-    width: 50%;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none;
-    position: absolute;
-    font-size: 40px;
-    top: 20%;
-    left: 25%;
-    transition: all 0.3s;
-}
-
-#presave-btn:hover{
-    background: #b9b854;
-    color: #ffff;
-}
 
 #next-btn:hover{
     background: #4e4d1d;
