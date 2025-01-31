@@ -48,11 +48,10 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-const presaveButton = document.getElementById("coverimage");
 const introText2 = document.getElementById("textIntro2");
 const logoImage = document.getElementById("imageLogo");
-const musicButton = document.getElementById("playMusicButton");
-const textCover = document.getElementById("textCover");
+const divSpotifyLink = document.getElementById("spotify-link")
+const youtubevideo = document.getElementById("youtube-video")
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -138,18 +137,16 @@ function selectAnswer(e){
 function showScore() {
     resetState();
     if(score == "5") {
-        questionElement.innerHTML = "HAI VINTO! ECCO LO SPOILER DEL NUOVO BRANO DI SCHIAVO!"
-        presaveButton.style.display = "block"
+        questionElement.innerHTML = "HAI VINTO!"
         introText2.style.display = "none"
-        musicButton.style.display = "block"
-        textCover.style.display = "block"
+        divSpotifyLink.style.display = "block"
+        youtubevideo.style.display = "block"
     }else{
         questionElement.innerHTML = "HAI RISPOSTO CORRETTAMENTE A " + score + " DOMANDE SU 5! HAI PERSO, RIPROVA PER AVERE LO SPOILER DEL BRANO DI SCHIAVO!"
         nextButton.innerHTML = "RIPROVA";
         nextButton.style.display = "block";
         introText2.style.display = "none"
-        presaveButton.style.display = "block"
-        textCover.style.display = "block"
+        divSpotifyLink.style.display = "block"
     }
 
 }
